@@ -1,5 +1,6 @@
 const discord = require('discord.js');
 var axios = require('axios');
+const config = require('./auth.json');
 const client = new discord.Client();
 
 client.on('message', (msg) => { if(msg.content.startsWith(`${config.prefix}covidth`))
